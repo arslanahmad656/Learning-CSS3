@@ -1,0 +1,40 @@
+.flexbox {
+    display: flex;
+}
+
+.box-300x300 {
+    width: 300px;
+    height: 300px;
+}
+
+.box-900x500 {
+    width: 900px;
+    height: 500px;
+}
+
+.box-200x200 {
+    width: 200px;
+    height: 200px;
+}
+
+.box-100x100 {
+    width: 100px;
+    height: 100px;
+}
+
+.box-200x100 {
+    width: 200px;
+    height: 100px;
+}
+
+.border-green {
+    border: 1px solid green;
+}
+
+.border-blue {
+    border: 1px solid blue;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}

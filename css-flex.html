@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <title>Learning CSS3</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Learning CSS3 Flexbox</h1>
+        <section>
+            <div class="flexbox box-900x500 border-green" id="parent">
+                <div class="box-200x200 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-200x200 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-100x100 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-200x100 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-200x200 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-200x200 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-100x100 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-200x100 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-200x200 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-200x200 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-100x100 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+                <div class="box-200x100 border-blue">
+                    <h3>Flex Item</h3>
+                </div>
+            </div>
+            <br><br>
+            <div class="margin-bottom">
+                <input width="150" id="txt-direction">&nbsp; <button onclick="setFlexDirection(document.getElementById('txt-direction').value)" style="width: 150px">Set Direction</button>
+            </div>
+            <div class="margin-bottom">
+                <input width="150" id="txt-wrap">&nbsp; <button onclick="setFlexWrap(document.getElementById('txt-wrap').value)" style="width: 150px">Set Wrap</button>
+            </div>
+            <div class="margin-bottom">
+                <input width="150" id="txt-justifyContent">&nbsp; <button onclick="setJustifyContent(document.getElementById('txt-justifyContent').value)" style="width: 150px">Set JustifyContent</button>
+            </div>
+            <div class="margin-bottom">
+                <input width="150" id="txt-alignContent">&nbsp; <button onclick="setAlignContent(document.getElementById('txt-alignContent').value)" style="width: 150px">Set AlignContent</button>
+            </div>
+            <div class="margin-bottom">
+                <input width="150" id="txt-alignItems">&nbsp; <button onclick="setAlignItems(document.getElementById('txt-alignItems').value)" style="width: 150px">Set AlignItems</button>
+            </div>
+            
+        </section>
+    </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flex.js"></script>
+</body>
+</html>
