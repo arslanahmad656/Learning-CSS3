@@ -11,12 +11,12 @@
     <div class="container-fluid">
         <h1>Learning Bootstrap 4</h1>
         <details>
-            <summary>Basic Layout (Containers)</summary>
+            <summary>Containers</summary>
 
             <div class="container-fluid border border-secondary">
                 <p class="display-2">A fluid container</p>
             </div>
-            
+
             <div class="container border border-primary">
                 <p class="display-2">A container</p>
             </div>
@@ -33,6 +33,286 @@
                 <p class="display-2">An lg container</p>
             </div>
         </details>
+        <hr>
+
+        <details open>
+            <summary>Grid System</summary>
+            <div class="container-fluid">
+                <br>
+                <strong>Equal Width Columns</strong>
+                <div class="row border border-primary">
+                    <div class="col border border-secondary">A column</div>
+                    <div class="col border border-warning">A column</div>
+                    <div class="col border border-info">A column</div>
+                </div>
+                <br>
+
+                <strong>Equal width columns in multiple lines</strong>
+                <div class="row border border-primary">
+                    <div class="col border border-secondary">
+                        A column
+                    </div>
+                    <div class="col border border-secondary">
+                        A column
+                    </div>
+                    <div class="col border border-secondary">
+                        A column
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col border border-secondary">
+                        A column
+                    </div>
+                    <div class="col border border-secondary">
+                        A column
+                    </div>
+                </div>
+                <br>
+                
+                <strong>Columns having different widths</strong>
+                <div class="row border border-danger">
+                    <div class="col-3 border border-success">
+                        A column
+                    </div>
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                    <div class="col-6 border border-success">
+                        A column
+                    </div>
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                </div>
+                <br>
+
+                <strong>Columns having different breakpoints</strong>
+                <div class="row border border-warning">
+                    <div class="col-sm-2 border border-dark">
+                        An sm-2 column
+                    </div>
+                    <div class="col-md-6 border border-dark">
+                        An md-6 column
+                    </div>
+                    <div class="col-lg-4 border border-dark">
+                        An lg-4 column
+                    </div>
+                </div>
+                <br>
+
+                <strong>Different breakpoints for same columns</strong>
+                <div class="row border border-secondary">
+                    <div class="col-md-8 border border-success">
+                        An md-8 column
+                    </div>
+                    <div class="col-6 col-md-4 border border-success">
+                        A col-6 col-md-4 column
+                    </div>
+                </div>
+                <br>
+
+                <div class="row border border-danger">
+                    <div class="col-6 col-md-4 border border-primary">
+                        A col-6 col-md-4 column
+                    </div>
+                    <div class="col-6 col-md-4 border border-primary">
+                        A col-6 col-md-4 column
+                    </div>
+                    <div class="col-6 col-md-4 border border-primary">
+                        A col-6 col-md-4 column
+                    </div>
+                </div>
+                <br>
+
+                <strong>Using row columns</strong>
+                <div class="row row-cols-2 border border-dark">
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                </div>
+                <br>
+    
+                <div class="row row-cols-3 border border-dark">
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                </div>
+                <br>
+    
+                <div class="row row-cols-4 border border-dark">
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                </div>
+                <br>
+    
+                <div class="row row-cols-4 border border-dark">
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col-8 border border-danger">A col-8</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                </div>
+                <br>
+    
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 border border-dark">
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                </div>
+                <br>
+    
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 border border-dark">
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col col-sm-3 col-md-5 col-lg-7 border border-danger">A col-sm-3 col-md-5 col-lg-7 column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                    <div class="col border border-info">A column</div>
+                </div>
+                <br>
+
+                <strong>Vertical alignment</strong>
+                <br>
+                <em>align-items-start</em>
+                <div class="row border border-warning align-items-start" style="height:100px">
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                </div>
+                <br>
+
+                <em>align-items-center</em>
+                <div class="row border border-warning align-items-center" style="height:100px">
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                </div>
+                <br>
+
+                <em>align-items-stretch</em>
+                <div class="row border border-warning align-items-stretch" style="height:100px">
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                    <div class="col border border-success">
+                        A column
+                    </div>
+                </div>
+                <br>
+
+                <em>align-self</em>
+                <div class="row border border-warning" style="height:100px">
+                    <div class="col border border-success align-self-end">
+                        A column
+                    </div>
+                    <div class="col border border-success align-self-center">
+                        A column
+                    </div>
+                    <div class="col border border-success align-self-start">
+                        A column
+                    </div>
+                    <div class="col border border-success align-self-stretch">
+                        A column
+                    </div>
+                </div>
+                <br>
+
+                <strong>Horizontal Aigmnemt</strong>
+                <br>
+
+                <em>justify-content-start</em>
+                <div class="row border border-success justify-content-start">
+                    <div class="col-4 border border-warning">
+                        A column
+                    </div>
+                    <div class="col-4 border border-warning">
+                        A column
+                    </div>
+                </div>
+                <br>
+
+                <em>justify-content-around</em>
+                <div class="row border border-success justify-content-around">
+                    <div class="col-4 border border-warning">
+                        A column
+                    </div>
+                    <div class="col-4 border border-warning">
+                        A column
+                    </div>
+                </div>
+                <br>
+
+                <strong>Column Wrapping</strong>
+                <div class="row border border-info">
+                    <div class="col-9 border border-success">.col-9</div>
+                    <div class="col-4 border border-success">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+                    <div class="col-6 border border-success">.col-6<br>Subsequent columns continue along the new line.</div>
+                  </div>
+                  <br>
+
+                  <strong>Column Ordering</strong>
+                  <div class="row border border-danger">
+                      <div class="col-2 border border-dark order-1 order-sm-2 order-md-3">
+                          DOM Order: 1<br>
+                          order: 1 <br>
+                          order-sm: 2 <br>
+                          order-md: 3 <br>
+                      </div>
+                      <div class="col-4 border border-dark order-2 order-sm-3 order-md-1">
+                        DOM Order: 2<br>
+                        order: 2 <br>
+                        order-sm: 3 <br>
+                        order-md: 1 <br>
+                    </div>
+                    <div class="col-6 border border-dark order-3 order-sm-1 order-md-2">
+                        DOM Order: 3<br>
+                        order: 3 <br>
+                        order-sm: 1 <br>
+                        order-md: 2 <br>
+                    </div>
+                  </div>
+                  <br>
+
+                <strong>Offsetting Columns</strong>
+                <div class="row border border-primary">
+                    <div class="col-4 border border-secondary">
+                        col-4
+                    </div>
+                    <div class="col-2 offset-3 border border-secondary">
+                        col-2 offset-3
+                    </div>
+                </div>
+            </div>
+        </details>
+        <hr>
     </div>
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
