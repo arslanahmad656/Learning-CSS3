@@ -378,11 +378,126 @@
         
 
         </details>
+        <hr>
+
+        <details>
+            <summary>Buttons</summary>
+
+            <div class="container-fluid">
+                <h4>Some Simple buttons</h4>
+                <button class="btn btn-primary">Button</button>
+                <button class="btn btn-secondary">Button</button>
+                <button class="btn btn-danger">Button</button>
+                <button class="btn btn-light">Button</button>
+                <button class="btn btn-link">Button</button>
+                <br> <br>
+                <button class="btn btn-outline-primary">Button</button>
+                <button class="btn btn-outline-secondary">Button</button>
+                <button class="btn btn-outline-danger">Button</button>
+                <button class="btn btn-outline-light">Button</button>
+                <button class="btn btn-outline-link">Button</button>
+            </div>
+            <br>
+
+            <div class="container-fluid">
+                <h4>Some elements as buttons</h4>
+                <a href="#" role="button" class="btn btn-info">Link</a>
+                <input type="submit" role="button" class="btn btn-success">
+                <input type="button" class="btn btn-warning" role="button" value="Button">
+            </div>
+            <br>
+
+            <div class="container-fluid">
+                <h4>Different sized buttons</h4>
+                <button class="btn btn-success btn-sm">Small</button>
+                <button class="btn btn-dark">Normal</button>
+                <button class="btn btn-danger btn-lg">Large</button>
+            </div>
+            <br>
+
+            <div class="container-fluid">
+                <h4>Block level buttoons</h4>
+                <button class="btn btn-secondary btn-block btn-sm">Block level button</button>
+                <button class="btn btn-info btn-block">Block level button</button>
+                <button class="btn btn-dark btn-block btn-lg">Block level button</button>
+            </div>
+            <br>
+
+            <div class="container-fluid">
+                <h4>Different states of buttons</h4>
+                <button class="btn btn-primary btn-lg active">Active State</button>
+                <button class="btn btn-primary btn-lg">Normal State</button>
+                <button class="btn btn-primary btn-lg" disabled>Disabled State</button>
+            </div>
+            <br>
+
+            <div class="container-fluid">
+                <h4>Checkboxes and radio buttons</h4>
+                <em>Single toggle-able button:</em><br>
+                <button class="btn btn-secondary" data-toggle="button" aria-pressed="false">
+                    Toggle Button
+                </button>
+                <button class="btn btn-secondary active" data-toggle="button" aria-pressed="true">
+                    Toggle Button (Pre-Active)
+                </button>
+                <br><br>
+
+                <em>Checkbox:</em><br>
+                <div class="btn-group-toggle d-inline-block" data-toggle="buttons">
+                    <label class="btn btn-info">
+                        <input type="checkbox"> Checkbox
+                    </label>
+                </div>
+                <div class="btn-group-toggle d-inline-block" data-toggle="buttons">
+                    <label class="btn btn-info active">
+                        <input type="checkbox" checked> Checkbox (Pre-Checked)
+                    </label>
+                </div>
+                <br><br>
+
+                <em>Radio Buttos</em><br>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-success">
+                        <input type="radio" name="choices" id="choice1"> Option 1
+                    </label>
+                    <label class="btn btn-success">
+                        <input type="radio" name="choices" id="choice2"> Option 2
+                    </label>
+                    <label class="btn btn-success">
+                        <input type="radio" name="choices" id="choice3"> Option 3
+                    </label>
+                </div>
+                <br>
+                <br>
+
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-success active">
+                        <input type="radio" name="choices" id="choice1" checked> Option 1 (Pre-Selected)
+                    </label>
+                    <label class="btn btn-success">
+                        <input type="radio" name="choices" id="choice2"> Option 2
+                    </label>
+                    <label class="btn btn-success">
+                        <input type="radio" name="choices" id="choice3"> Option 3
+                    </label>
+                </div>
+            </div>
+            <br>
+
+            <div class="container-fluid">
+                <h4>Programability</h4>
+                <button id="btn-source" class="btn btn-warning" onclick="toggleButton()">Click here</button> 
+                to toggle 
+                <button id="btn-target" class="btn btn-danger" data-toggle="button">this button</button>
+            </div>
+        </details>
+        <hr>
     </div>
 
     <script src="../../js/jquery-3.5.1.slim.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="alerts.js"></script>
+    <script src="buttons.js"></script>
 </body>
 </html>
