@@ -313,10 +313,61 @@
             </div>
         </details>
         <hr>
+
+        <details>
+            <summary>Alerts</summary>
+            
+            <div class="alert alert-primary" role="alert">
+                I am a non-dismissible alert.
+            </div>
+            <br>
+
+            <div class="alert alert-warning" role="alert">
+                A non-dismissible alert containing a <a href="#" class="alert-link">hyperlink</a>
+            </div>
+            <br>
+
+            <div class="alert alert-dark" role="alert">
+                A non-dismissible alert containing a <a href="#" class="alert-link">hyperlink</a>
+            </div>
+            <br>
+
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                This is a dismissible alert.
+                <button class="close" data-dismiss="alert">&times;</button>
+            </div>
+            <br>
+
+            <div class="alert alert-secondary alert-dismissible fade show" id="my-alert" role="alert">
+                Close me to observer events.
+                <button class="close" data-dismiss="alert">&times;</button>
+            </div>
+            <br>
+
+            <div class="alert alert-secondary" role="alert" id="alert1">
+                My name is alert1
+            </div>
+            <div class="alert alert-info" role="alert" id="alert2">
+                My name is alert2
+            </div>
+            <div class="alert alert-success" role="alert" id="alert3">
+                My name is alert3
+            </div>
+
+            <input type="text" placeholder="Enter alert name..." id="txt-alertName">
+            <button class="btn btn-primary" onclick="showAlert($('#txt-alertName').val())">
+                Show
+            </button>
+            <button class="btn btn-warning" onclick="hideAlert($('#txt-alertName').val())">
+                Hide
+            </button>
+        </details>
+        <hr>
     </div>
 
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="alerts.js"></script>
 </body>
 </html>
